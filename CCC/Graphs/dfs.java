@@ -1,4 +1,4 @@
-//DFS of Graph
+//DFS of Graph - Iterative DFS
 class Solution {
     public ArrayList<Integer> dfs(ArrayList<ArrayList<Integer>> adj) {
         // code here
