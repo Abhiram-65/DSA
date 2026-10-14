@@ -1,0 +1,30 @@
+
+class NestedTry2
+{
+    public static void main(String args[])
+    {
+        try
+        {
+            int a = args.length;
+            int b = a / 10;
+
+            System.out.println("a:" + a);
+
+            try
+            {
+                int c[] = {1, 2, 3, 4, 5};
+                c[10] = 67;
+            }
+            catch(ArrayIndexOutOfBoundsException e)
+            {
+                System.out.println(e);
+            }
+
+            System.out.println("outer try");
+        }
+        catch(ArithmeticException e)
+        {
+            System.out.println(e);
+        }
+    }
+}
